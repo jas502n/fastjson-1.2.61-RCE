@@ -1,11 +1,12 @@
 # fastjson-1.2.61-RCE
 
+![](./Fastjson-1.2.61-RCE.gif)
+
 ## Ps：
 官方在https://github.com/alibaba/fastjson/blob/master/src/main/java/com/alibaba/fastjson/parser/ParserConfig.java 中，将0x7bddd363ad3998c6L
 （即1.2.61	8925522461579647174	0x7bddd363ad3998c6L	org.apache.commons.configuration.JNDIConfiguration）加入黑名单，但是未将org.apache.commons.configuration2.JNDIConfiguration加入黑名单，导致1.2.61 bypass.
 
-
-![](./Fastjson-1.2.61-RCE.gif)
+![](./blacklist.jpg)
 
 ## FastJsonTest.java
 ```
